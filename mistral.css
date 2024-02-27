@@ -1,0 +1,88 @@
+/* ==UserStyle==
+@name         Mistral Dark inspired by GPT Theme
+@version      20240227.21.06
+@namespace    https://userstyles.world/user/Co-7
+@description  Dark theme for Mistral, inspired by ChatGPT's design interface.
+@author       Co-7
+==/UserStyle== */
+
+@-moz-document url-prefix("https://chat.mistral.ai/chat") {
+    /* Base dark theme color */
+    html.dark:root{
+        --background: 0, 0%, 13% !important;
+    }
+    
+    /* Body and background styling */
+    html.dark body > div > div.absolute.left-0 >div.bg-background {
+        background: #171717;
+    }
+    
+    /* Input styling within the background div */
+    html.dark body > div > div.absolute.left-0 >div.bg-background input {
+        background: #212121;
+        border-radius: 7px;
+        padding: 18px 10px;
+    }
+    
+    /* Prose (text) styling */
+    html.dark .prose {
+        color: #ececec;
+        font-weight: 400;
+        font-size: 16px
+    }
+    
+    /* Preformatted text (pre) styling */
+    html.dark pre {
+        background: #0d0d0d !important;
+    }
+    
+    html.dark pre > div > div {
+        background: #0d0d0d !important;
+    }
+    
+    /* Group div styling */
+    html.dark div.group.items-end {
+      background: #282828;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    
+    html.dark div.group.items-end > span.shrink-0 {
+        top: calc(50% - 14px);
+    }
+    
+    html.dark div.group.items-end > span.shrink-0 > span {
+        background: #fcdc25;
+        color: black;
+        font-weight: bold;
+    }
+    
+    /* SVG path styling within group div */
+    html.dark div.group.items-stretch > svg > path {
+        stroke: #ea580c;
+    }
+    
+    /* Sticky div styling */
+    html.dark .sticky > div > div.items-center > div {
+      color: white;
+      font-style: italic;
+      opacity: 0.2;
+      font-weight: 600;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+    
+    /* Form and button styling within items-stretch div */
+    html.dark div.items-stretch form {
+        border-radius: 15px;
+    }
+    
+    html.dark div.items-stretch button {
+        border-radius: 15px;
+    }
+    
+    html.dark div.items-stretch form svg {
+        margin: 0;
+    }
+    
+    }
